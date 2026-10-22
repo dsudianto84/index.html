@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerja Pakai AI</title>
+<meta name="description" content="Ulasan AI yang jujur untuk karyawan dan pemula.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAFAF7;
+    --ink: #1F2933;
+    --muted: #5B6770;
+    --blue: #2F6FEB;
+    --blue-soft: #E8EFFD;
+    --line: #E4E4DE;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 56px 20px 48px;
+  }
+  main { max-width: 440px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 40px; }
+  .avatar {
+    width: 84px; height: 84px; border-radius: 50%;
+    background: var(--blue-soft); color: var(--blue);
+    display: grid; place-items: center;
+    font-size: 30px; font-weight: 600;
+    margin: 0 auto 20px;
+  }
+  h1 { font-size: 24px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+  header p { margin: 0 auto; color: var(--muted); font-size: 15px; max-width: 320px; }
+
+  .links { display: grid; gap: 14px; }
+  .link {
+    display: block; text-decoration: none; color: var(--ink);
+    background: #fff; border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px 20px;
+    transition: border-color .15s;
+  }
+  .link:hover { border-color: var(--blue); }
+  .link:focus-visible, summary:focus-visible, .ig:focus-visible {
+    outline: 3px solid var(--blue); outline-offset: 3px;
+  }
+  .link strong { display: block; font-weight: 600; font-size: 16px; margin-bottom: 2px; }
+  .link span { display: block; font-size: 13.5px; color: var(--muted); }
+  .link.main { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .link.main span { color: #DCE7FD; }
+  .group { display: grid; gap: 14px; }
+  .group-title { font-size: 15px; font-weight: 600; margin: 14px 0 -2px; color: var(--ink); }
+  .chip {
+    font-style: normal;
+    display: inline-block; font-size: 12px; font-weight: 500;
+    background: var(--blue-soft); color: var(--blue);
+    border-radius: 999px; padding: 2px 10px; margin-bottom: 8px;
+  }
+
+  details {
+    background: #fff; border: 1px solid var(--line); border-radius: 16px;
+    padding: 0 20px;
+  }
+  summary { cursor: pointer; padding: 18px 0; font-weight: 600; font-size: 16px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--blue); font-weight: 500; }
+  details[open] summary::after { content: "\2212"; }
+  details ul { margin: 0 0 18px; padding-left: 18px; color: var(--muted); font-size: 14px; }
+  details li { margin-bottom: 6px; }
+
+  .ig { display: block; text-align: center; margin-top: 28px; color: var(--blue); font-weight: 500; text-decoration: none; font-size: 15px; }
+  .ig:hover { text-decoration: underline; }
+  footer { margin-top: 36px; text-align: center; font-size: 12.5px; color: var(--muted); }
+  footer p { margin: 0 auto; max-width: 340px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="avatar" aria-hidden="true">K</div>
+    <h1>Kerja Pakai AI</h1>
+    <p>Ulasan AI yang jujur untuk karyawan dan pemula. Aku bahas yang benar-benar kucoba.</p>
+  </header>
+
+  <!--
+    CARA EDIT: ubah teks atau alamat di dalam href="..." pada tiap blok .link di bawah.
+    Tambah tombol baru dengan menyalin satu blok <a class="link">...</a>.
+  -->
+  <div class="links">
+
+    <!-- 1. Produk sendiri. Ganti mailto dengan link Google Form bila sudah ada. -->
+    <a class="link main" href="mailto:26kerjapakaiai@gmail.com?subject=Daftar%20peminat%20paket%20prompt&body=Halo%2C%20aku%20mau%20dikabari%20saat%20paket%20prompt%20CV%2C%20surat%2C%20dan%20email%20siap.">
+      <strong>Jika berminat paket prompt, daftar di sini</strong>
+      <span>Template CV, surat lamaran, dan email kerja. Paketnya belum jadi, kamu akan dikabari saat siap.</span>
+    </a>
+
+    <!-- 2. Rekomendasi affiliate. Boleh lebih dari satu: salin satu blok <a class="link">...</a> di bawah
+         dan tempel di dalam <div class="group">. Cek aturan tiap program sebelum dipublikasikan. -->
+    <h2 class="group-title">Yang aku pakai dan rekomendasikan</h2>
+    <div class="group">
+
+      <a class="link" rel="sponsored noopener" target="_blank"
+         href="https://www.affiliate.id/karyawan-ai/product/webinar-class-karyawan-ai-e-course-basic-ai-tools-beginner-tUN4dMiJlN1ehHsnCK25?aff=ternak-ai">
+        <em class="chip">Link affiliate</em>
+        <strong>Webinar Class Karyawan.AI</strong>
+        <span>Kelas dasar AI untuk pemula, Rp149.000. Aku member dan pernah ikut. Ulasan lengkapnya ada di feed.</span>
+      </a>
+
+      <!-- CONTOH AFFILIATE KE-2 (hapus tanda komentar ini setelah isi nama, deskripsi, dan link)
+      <a class="link" rel="sponsored noopener" target="_blank" href="GANTI-DENGAN-LINK-AFFILIATE">
+        <em class="chip">Link affiliate</em>
+        <strong>Nama produk atau tool</strong>
+        <span>Satu kalimat jujur: untuk siapa dan kenapa kamu merekomendasikannya.</span>
+      </a>
+      -->
+
+    </div>
+
+    <!-- 3. Transparansi -->
+    <details>
+      <summary>Cara aku mengulas</summary>
+      <ul>
+        <li>Aku hanya membahas hal yang sudah kucoba sendiri.</li>
+        <li>Aku tidak menjanjikan penghasilan tertentu.</li>
+        <li>Link affiliate selalu diberi label.</li>
+        <li>Kalau ada materi yang menurutku kurang cocok, aku bilang apa adanya.</li>
+      </ul>
+    </details>
+
+    <!-- 4. Kontak -->
+    <a class="link" href="mailto:26kerjapakaiai@gmail.com">
+      <strong>Kontak</strong>
+      <span>26kerjapakaiai@gmail.com</span>
+    </a>
+  </div>
+
+  <a class="ig" href="https://www.instagram.com/kerja.pakai.ai" target="_blank" rel="noopener">@kerja.pakai.ai di Instagram</a>
+
+  <footer>
+    <p>Beberapa tautan di halaman ini adalah link affiliate. Jika kamu membeli lewat link itu, aku bisa menerima komisi dan harga untukmu tidak berubah.</p>
+  </footer>
+</main>
+</body>
+</html>
